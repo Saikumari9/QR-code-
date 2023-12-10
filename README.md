@@ -1,23 +1,16 @@
-import qrcode
 
-def generate_qr_code(data, file_path):
-    qr = qrcode.QRCode(
-        version=1,
-        error_correction=qrcode.constants.ERROR_CORRECT_L,
-        box_size=10,
-        border=4,
-    )
 
-    qr.add_data(data)
-    qr.make(fit=True)
 
-    img = qr.make_image(fill_color="black", back_color="white")
-    img.save(file_path)
+QR Code Generator:->
+This QR Code Generator project, authored by Saikumari Pilli, is a simple yet powerful tool designed to streamline the process of creating QR codes. The project utilizes Python and the qrcode library to provide users with a straightforward solution for generating QR codes for various data types, such as URLs or plain text.
 
-if __name__ == "__main__":
-    data = "https://www.example.com"
-    file_path = "example_qr_code.png"
+Key Features:->
+User-Friendly Interface:
+The generator offers a hassle-free experience, enabling users to effortlessly create QR codes with a minimalistic Python script.
 
-    generate_qr_code(data, file_path)
-    print(f"QR code generated and saved to {file_path}")
+Customization Options:
+Users can customize the appearance of QR codes, tailoring them to their specific preferences.
+
+Versatility: 
+The tool supports the encoding of different types of data, making it suitable for a wide range of use cases.
 
